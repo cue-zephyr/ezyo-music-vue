@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <nav-menu>
-      <img id="logo" src="./assets/logo.svg" alt="ezyo music logo"/>
-    </nav-menu>
+    <nav-menu/>
     <router-view/>
   </div>
 </template>
@@ -18,16 +16,30 @@ export default {
 </script>
 
 <style>
-@keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, -10px, 0); }
-}
 #app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
-#logo {
-  animation: bounce 0.8s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  width: 100px;
+.content {
+  color: #efefef;
+  flex: 1;
+  font-family: Inconsolata;
+}
+.content * {
+  margin: 16px;
+  text-align: center;
+}
+.content h1, .content h2 {
+  font-family: Bai Jamjuree|;
+}
+.content h1 {
+  font-size: 4em;
+}
+.content h2 {
+  font-size: 3em;
+}
+.content p {
+  font-size: 1.3em;
 }
 </style>
