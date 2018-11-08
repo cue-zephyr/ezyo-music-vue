@@ -14,13 +14,13 @@ export default new Router({
       component: Home
     },
     {
-      path: "/music",
-      name: "Music",
+      path: '/music',
+      name: 'Music',
       component: Music
     },
     {
-      path: "/contact",
-      name: "Contact",
+      path: '/contact',
+      name: 'Contact',
       component: Contact
     }
   ]

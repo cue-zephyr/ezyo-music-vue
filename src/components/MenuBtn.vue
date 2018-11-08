@@ -18,34 +18,34 @@
 
 <script>
 export default {
-  name: "MenuBtn",
-  props: ["state", "txt"],
+  name: 'MenuBtn',
+  props: ['state', 'txt'],
   filters: {
-    toUpper(value) {
-      return value.toUpperCase();
+    toUpper (value) {
+      return value.toUpperCase()
     },
-    vaporWave(value) {
-      const alphaNumericOffset = parseInt("fee0", 16);
-      const spaceOffset = parseInt("2fe0", 16);
-      var vw = "";
+    vaporWave (value) {
+      const alphaNumericOffset = parseInt('fee0', 16)
+      const spaceOffset = parseInt('2fe0', 16)
+      var vw = ''
       for (let i = 0; i < value.length; i++) {
-        var code = value.charCodeAt(i);
-        var vwCharCodeDec = 0;
+        var code = value.charCodeAt(i)
+        var vwCharCodeDec = 0
         if (code >= 65 && code <= 122) {
-          vwCharCodeDec = code + alphaNumericOffset;
-        } else if (code == 32) {
-          vwCharCodeDec = code + spaceOffset;
+          vwCharCodeDec = code + alphaNumericOffset
+        } else if (code === 32) {
+          vwCharCodeDec = code + spaceOffset
         } else if (code >= 48 && code <= 57) {
-          vwCharCodeDec = code + alphaNumericOffset;
+          vwCharCodeDec = code + alphaNumericOffset
         } else {
-          break;
+          break
         }
-        vw += String.fromCharCode(vwCharCodeDec);
+        vw += String.fromCharCode(vwCharCodeDec)
       }
-      return vw;
+      return vw
     }
   }
-};
+}
 </script>
 
 <style scoped>

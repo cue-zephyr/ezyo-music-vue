@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import NavMenu from "./components/NavMenu";
+import NavMenu from './components/NavMenu'
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    "nav-menu": NavMenu
+    'nav-menu': NavMenu
   }
-};
+}
 </script>
 
 <style>
@@ -31,7 +31,7 @@ export default {
   text-align: center;
 }
 .content h1, .content h2 {
-  font-family: Bai Jamjuree|;
+  font-family: Bai Jamjuree;
 }
 .content h1 {
   font-size: 4em;

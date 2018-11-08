@@ -25,18 +25,18 @@
 </template>
 
 <script>
-import MenuBtn from "./MenuBtn";
+import MenuBtn from './MenuBtn'
 export default {
-  name: "NavMenu",
+  name: 'NavMenu',
   components: {
-    "menu-btn": MenuBtn
+    'menu-btn': MenuBtn
   },
-  data() {
+  data () {
     return {
-      msg: "Navigation menu here."
-    };
+      msg: 'Navigation menu here.'
+    }
   }
-};
+}
 </script>
 
 <style scoped>
