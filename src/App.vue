@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <svg-filters/>
     <nav-menu/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import SvgFilters from './components/SvgFilters.vue'
 import NavMenu from './components/NavMenu'
 export default {
   name: 'App',
   components: {
-    'nav-menu': NavMenu
+    'nav-menu': NavMenu,
+    'svg-filters': SvgFilters
   }
 }
 </script>
@@ -22,6 +25,7 @@ export default {
   height: 100vh;
 }
 .content {
+  background-image: linear-gradient( #ac759a, #6e5f86);
   color: #efefef;
   flex: 1;
   font-family: Inconsolata;

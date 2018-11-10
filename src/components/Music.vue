@@ -1,5 +1,5 @@
 <template>
-    <div class="content" id="music">
+    <div id="music" class="content">
         <article>
             <h1>Hannah</h1>
             <h2>INIGO</h2>
@@ -27,5 +27,5 @@ export default {
 }
 iframe {
     width: 540px;
-};
+}
 </style>

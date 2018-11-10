@@ -41,8 +41,12 @@ export default {
 
 <style scoped>
 @keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, -10px, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -10px, 0);
+  }
 }
 #nav {
   background-image: url("../assets/vw-checkerboard.svg");
