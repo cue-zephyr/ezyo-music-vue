@@ -7,9 +7,9 @@
             <img id="logo" src="../assets/logo.svg" alt="ezyo music logo"/>
           </a>
         </router-link>
-        <li class="button">
-          <menu-btn state="disabled" txt="about"/>
-        </li>
+        <router-link title="learn about me" tag="li" class="button" to="/about">
+          <menu-btn txt="about"/>
+        </router-link>
         <router-link title="listen to my music" tag="li" class="button" to="/music">
           <menu-btn txt="music"/>
         </router-link>
@@ -49,8 +49,11 @@ export default {
   }
 }
 #nav {
-  background-image: url("../assets/vw-checkerboard.svg");
-  background-size: 50%;
+  align-items: center;
+  background-image: linear-gradient(#686868, #2f2f2f) ;
+  /*background-image: url("../assets/vw-checkerboard.svg");*/
+  background-image: url("../assets/carbon-fiber.svg");
+  background-size: 2%;
   display: flex;
   height: 100vh;
   overflow: hidden;

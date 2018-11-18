@@ -25,14 +25,15 @@ export default {
   height: 100vh;
 }
 .content {
-  background-image: linear-gradient( #ac759a, #6e5f86);
+  /*background-image: linear-gradient( #ac759a, #6e5f86);*/
+  /*background-image: linear-gradient( #757fac, #494c6d);*/
+  background-image: linear-gradient( #b65252, #3c253f);
   color: #efefef;
   flex: 1;
   font-family: Inconsolata;
 }
 .content * {
   margin: 16px;
-  text-align: center;
 }
 .content h1, .content h2 {
   font-family: Bai Jamjuree;
