@@ -25,6 +25,11 @@ export default {
 }
 #em {
     margin: 20px;
-    width: 400px;
+    /*max-width: 400px;*/
+    width: 100%;
+}
+img {
+    max-width: 480px;
+    width: 100%;
 }
 </style>

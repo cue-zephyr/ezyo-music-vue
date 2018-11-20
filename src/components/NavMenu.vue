@@ -1,8 +1,8 @@
 <template>
   <div id="nav">
-    <nav>
+    <nav id="nav">
       <ul>
-        <router-link title="home" tag="li" class="home" to="/">
+        <router-link title="Ezyo Music home" tag="li" class="home" to="/">
           <a>
             <img id="logo" src="../assets/logo.svg" alt="ezyo music logo"/>
           </a>
@@ -49,28 +49,54 @@ export default {
   }
 }
 #nav {
-  align-items: center;
   background-image: linear-gradient(#686868, #2f2f2f) ;
-  /*background-image: url("../assets/vw-checkerboard.svg");*/
-  background-image: url("../assets/carbon-fiber.svg");
-  background-size: 2%;
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
-nav {
-  padding: 40px 20px;
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0 4px;
+  justify-content: center;
 }
 #logo {
-  animation: bounce 0.8s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  width: 100px;
+  width: 50px;
 }
 #nav nav ul li {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+  flex-direction: row;
+}
+
+@media only screen and (min-width:768px) {
+  #nav {
+    align-items: center;
+    /*background-image: url("../assets/vw-checkerboard.svg");*/
+    /*background-image: url("../assets/carbon-fiber.svg");*/
+    background-size: 2%;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    width: 160px;
+  }
+  nav {
+    padding: 40px 20px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  #logo {
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 100px;
+  }
+  #nav nav ul li {
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+  }
 }
 </style>

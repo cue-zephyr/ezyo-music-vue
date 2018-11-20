@@ -23,6 +23,7 @@ export default {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  overflow: hidden;
 }
 .content {
   /*background-image: linear-gradient( #ac759a, #6e5f86);*/
@@ -31,6 +32,7 @@ export default {
   color: #efefef;
   flex: 1;
   font-family: Inconsolata;
+  padding: 6px;
 }
 .content * {
   margin: 16px;

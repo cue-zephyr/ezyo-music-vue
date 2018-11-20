@@ -21,7 +21,22 @@ export default {
     justify-content: center;
 }
 a {
+    color: #adadad;
     font-family: Inconsolata;
     font-size: 4em;
+    padding: 8px;
+}
+a:hover, a:visited:hover {
+    color: #eeeeee;
+}
+a:visited {
+    color: #aa8888;
+}
+a:active {
+    color: #e4cd9e;
+}
+a:focus {
+    border: 2px solid #eceb90;
+    padding: 6px;
 }
 </style>
