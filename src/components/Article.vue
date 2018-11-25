@@ -1,5 +1,8 @@
 <template>
-<div class="content">
+<div id="article">
+  <article>
+    <slot></slot>
+  </article>
 </div>
 </template>
 
@@ -9,8 +12,9 @@ export default {
 }
 </script>
 
-<style>
-.content {
-    
+<style scoped>
+article {
+    background-image: linear-gradient( #b65252, #3c253f);
+    height: 100vh;
 }
 </style>

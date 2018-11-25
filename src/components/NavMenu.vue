@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <nav id="nav">
+    <nav>
       <ul>
         <router-link title="Ezyo Music home" tag="li" class="home" to="/">
           <a>
@@ -49,11 +49,12 @@ export default {
   }
 }
 #nav {
-  background-image: linear-gradient(#686868, #2f2f2f) ;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+}
+nav {
+  background-image: linear-gradient(#686868, #2f2f2f) ;
 }
 nav ul {
   align-items: center;
@@ -79,10 +80,15 @@ nav ul {
     display: flex;
     height: 100vh;
     overflow: hidden;
-    width: 160px;
+    position: relative;
+    width: 200px;
   }
   nav {
+    height: 100vh;
     padding: 40px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   nav ul {
     flex-direction: column;
