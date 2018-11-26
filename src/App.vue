@@ -27,16 +27,4 @@ export default {
 .router-view {
   flex: 1;
 }
-.content h1, .content h2 {
-  font-family: Bai Jamjuree;
-}
-.content h1 {
-  font-size: 4em;
-}
-.content h2 {
-  font-size: 3em;
-}
-.content p {
-  font-size: 1.3em;
-}
 </style>

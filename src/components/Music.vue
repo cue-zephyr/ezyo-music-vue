@@ -40,7 +40,19 @@ export default {
     flex-direction: column;
     justify-content: center;
 }
+.video {
+    height: 0;
+    padding-top: 25px;
+	padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+
+}
 iframe {
-    width: 540px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 </style>

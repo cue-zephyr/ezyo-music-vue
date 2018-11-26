@@ -3,9 +3,8 @@
     <nav>
       <ul>
         <router-link title="Ezyo Music home" tag="li" class="home" to="/">
-          <a>
             <img id="logo" src="../assets/logo.svg" alt="ezyo music logo"/>
-          </a>
+            <menu-btn txt="home"/>
         </router-link>
         <router-link title="learn about me" tag="li" class="button" to="/about">
           <menu-btn txt="about"/>
@@ -51,24 +50,28 @@ export default {
 #nav {
   position: fixed;
   left: 0;
+  right: 0;
   bottom: 0;
 }
 nav {
   background-image: linear-gradient(#686868, #2f2f2f) ;
-}
+  }
 nav ul {
   align-items: center;
   display: flex;
   flex-direction: row;
   margin: 0 4px;
   justify-content: center;
+  width: 100%;
 }
 #logo {
+  display: none;
   width: 50px;
 }
 #nav nav ul li {
-  display: flex;
+  flex: 1;
   flex-direction: row;
+  text-align: center;
 }
 
 @media only screen and (min-width:768px) {
@@ -97,7 +100,16 @@ nav ul {
     animation: bounce 0.8s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    display :block;
     width: 100px;
+  }
+  .home {
+    line-height: 0; 
+  font-size: 0;
+  color: transparent;
+  }
+  .home * {
+    display: none;
   }
   #nav nav ul li {
     align-items: center;
