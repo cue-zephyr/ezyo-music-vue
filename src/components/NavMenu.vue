@@ -87,6 +87,7 @@ nav ul {
     width: 200px;
   }
   nav {
+    box-shadow: 2px 0px 2px rgba(0,0,0,0.5);
     height: 100vh;
     padding: 40px 20px;
     position: fixed;

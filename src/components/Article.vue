@@ -22,6 +22,7 @@ article h1, .content h2 {
 }
 article h1 {
   font-size: 2em;
+  text-transform: uppercase;
 }
 article h2 {
   font-size: 1.8em;

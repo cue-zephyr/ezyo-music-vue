@@ -10,11 +10,11 @@
                 </div>
             </content-article>
             <content-article>
-                <h1>Hannah</h1>
-                <h2>INIGO</h2>
-                <p>I worked on this production</p>
+                <h1>Only A Memory</h1>
+                <h2>Rachel WhiteO</h2>
+                <p>I worked on this production ad well</p>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lg9jwSm6vzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pV9wm8mHNak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </content-article>
         </content-view>
@@ -41,11 +41,9 @@ export default {
     justify-content: center;
 }
 .video {
-    height: 0;
-    padding-top: 25px;
-	padding-bottom: 56.25%; /* 16:9 */
     position: relative;
-
+    height: 30%;
+    width: 100%;
 }
 iframe {
     position: absolute;
@@ -54,5 +52,15 @@ iframe {
     left: 0;
     height: 100%;
     width: 100%;
+}
+@media only screen and (min-width:768px) {
+    .video {
+        height: 40%;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .video {
+        width: 50%;
+    }
 }
 </style>
