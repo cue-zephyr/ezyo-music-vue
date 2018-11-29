@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Music from '@/components/Music'
+import Services from '@/components/Services'
 import Contact from '@/components/Contact'
 
 Vue.use(Router)
@@ -23,6 +24,11 @@ export default new Router({
       path: '/music',
       name: 'Music',
       component: Music
+    },
+    {
+      path: '/services',
+      name: 'Services',
+      component: Services
     },
     {
       path: '/contact',

@@ -17,7 +17,6 @@ export default {
   color: #efefef;
   font-family: Inconsolata;
   height: 100vh;
-  margin: 0 160px;
   width: 100%;
 }
 </style>

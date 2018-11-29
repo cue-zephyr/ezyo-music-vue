@@ -1,5 +1,5 @@
 <template>
-    <div id="contact" class="content">
+    <div id="contact">
         <a target="_blank" href="mailto:ezyo@ezyomusic.com">email</a>
         <a target="_blank" href="https://instagram.com/ezyomusic">instagram</a>
         <a target="_blank" href="https://open.spotify.com/artist/16QCSNhQUlkqsR3xgtlSAs">spotify</a>
@@ -15,7 +15,7 @@ export default {
 <style scoped>
 #contact {
     align-items: center;
-    background-color: #6a8a8d;
+    background-image: linear-gradient( #b65252, #3c253f);
     display: flex;
     flex-direction: column;
     justify-content: center;

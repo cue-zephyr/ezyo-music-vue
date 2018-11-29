@@ -2,7 +2,7 @@
     <div id="music">
         <content-view>
             <content-article>
-                <h1>Hannah</h1>
+                <h1>"Hannah"</h1>
                 <h2>INIGO</h2>
                 <p>I worked on this production</p>
                 <div class="video">
@@ -10,7 +10,7 @@
                 </div>
             </content-article>
             <content-article>
-                <h1>Only A Memory</h1>
+                <h1>"Only A Memory"</h1>
                 <h2>Rachel WhiteO</h2>
                 <p>I worked on this production ad well</p>
                 <div class="video">

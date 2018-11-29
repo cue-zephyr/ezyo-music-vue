@@ -12,9 +12,9 @@
         <router-link title="listen to my music" tag="li" class="button" to="/music">
           <menu-btn txt="music"/>
         </router-link>
-          <li class="button">
-            <menu-btn state="disabled" txt="services"/>
-          </li>
+        <router-link title="what Ezyo can do for you" tag="li" class="button" to="/services">
+            <menu-btn txt="services"/>
+          </router-link>
           <router-link title="contact me" tag="li" class="button" to="/contact">
             <menu-btn txt="contact" />
           </router-link>
@@ -55,13 +55,12 @@ export default {
 }
 nav {
   background-image: linear-gradient(#686868, #2f2f2f) ;
-  }
+}
 nav ul {
   align-items: center;
   display: flex;
   flex-direction: row;
   margin: 0 4px;
-  justify-content: center;
   width: 100%;
 }
 #logo {
@@ -76,7 +75,6 @@ nav ul {
 
 @media only screen and (min-width:768px) {
   #nav {
-    align-items: center;
     /*background-image: url("../assets/vw-checkerboard.svg");*/
     /*background-image: url("../assets/carbon-fiber.svg");*/
     background-size: 2%;
@@ -87,8 +85,11 @@ nav ul {
     width: 200px;
   }
   nav {
+    align-content: center;
     box-shadow: 2px 0px 2px rgba(0,0,0,0.5);
-    height: 100vh;
+    display: flex;
+    height: 100%;
+    justify-content: center;
     padding: 40px 20px;
     position: fixed;
     top: 0;
