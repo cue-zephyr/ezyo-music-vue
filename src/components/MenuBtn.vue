@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-        <button :class="state" :disabled="state">{{ txt }}</button>
+        <button class="btn" :class="state" :disabled="state">{{ txt }}</button>
     </div>
 </template>
 
@@ -19,6 +19,9 @@ export default {
   font-family: Montserrat, sans-serif;
   height: 60px;
   text-align: center;
+}
+.button .active {
+  color:green;
 }
 
 @media only screen and (min-width:768px) {

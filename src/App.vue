@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <svg-filters/>
     <nav-menu/>
     <router-view class="router-view"/>
+    <svg-filters/>
   </div>
 </template>
 

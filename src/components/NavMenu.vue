@@ -80,8 +80,15 @@ nav ul {
   flex: 1;
   flex-direction: row;
 }
-.router-link-exact-active .button button {
-  background-color:blue;
+.router-link-exact-active.home {
+  filter: url('/#white-glow');
+}
+.router-link-exact-active:not(.home) {
+  background-color: #efe0af;
+  filter: url('/#white-glow');
+}
+.router-link-exact-active .button {
+  opacity: 0.6;
 }
 @media only screen and (min-width:768px) {
   #nav {
@@ -113,7 +120,7 @@ nav ul {
     animation: bounce 0.8s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    display :block;
+    display: block;
     width: 100px;
   }
   .home {
@@ -137,6 +144,9 @@ nav ul {
   }
   nav {
     width: 300px;
+  }
+  #logo {
+    width:150px;
   }
 }
 </style>

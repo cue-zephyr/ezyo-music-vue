@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    activeRoute: 'nothing',
+    activeRoute: '',
     scrollPosition: 0,
     viewHeight: 0
   },
