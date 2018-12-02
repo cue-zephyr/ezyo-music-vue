@@ -58,6 +58,12 @@ export default {
   flex-direction: row;
   height: 100vh;
 }
+::selection {
+  background: #ffae00; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffae00; /* Gecko Browsers */
+}
 .router-view {
   flex: 1;
 }
