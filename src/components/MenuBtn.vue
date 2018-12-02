@@ -12,32 +12,27 @@ export default {
 </script>
 
 <style scoped>
-.button {
-  color: #efefef;
-}
 .button button {
   border: none;
   background-color: transparent;
   color: #efefef;
   font-family: Montserrat, sans-serif;
   height: 60px;
+  text-align: center;
 }
 
 @media only screen and (min-width:768px) {
   .button button {
+    /*background-image: linear-gradient(#ddd, #888);*/
+    /*background-color: #4f6e92;*/
+    background-color: #7a3b3b;
     border: 2px solid #7f7f7f;
     border-radius: 2px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: #efefef;
     font-family: Montserrat, sans-serif;
     font-size: 1.3em;
-    padding: 16px 32px;
     width: 160px;
-  }
-  .button button:not(.disabled) {
-    /*background-image: linear-gradient(#ddd, #888);*/
-    /*background-color: #4f6e92;*/
-    background-color: #7a3b3b;
   }
   .button button:disabled {
     /*background-color: #6a778f;*/
@@ -46,7 +41,7 @@ export default {
     color: #777777;
 
   }
-  .button button:not(.disabled):hover {
+  .button button:hover {
     /*background-image: linear-gradient(#eee, #999);*/
     /*background-color: #5084c0;*/
     background-color: #aa5a5a;
@@ -55,7 +50,7 @@ export default {
     text-decoration: underline;
     transition: all 0.2s;
   }
-  .button button:not(.disabled):active {
+  .button button:active {
     /*background-image: linear-gradient(#aaa, #ededed);*/
     /*background-color: #9ac3f1;*/
     background-color: #db9e81;
@@ -72,6 +67,12 @@ export default {
   }
   .button button::-moz-focus-inner {
     border: 0;
+  }
+}
+@media only screen and (min-width:1600px) {
+  .button button {
+    height: 10vh;
+    width: 250px;
   }
 }
 </style>

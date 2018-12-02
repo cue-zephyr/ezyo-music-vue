@@ -2,6 +2,8 @@
   <div id="nav">
     <nav>
       <ul>
+        <!--<li>scroll position: {{ scrollPosition }}</li>
+        <li>active route {{ activeRoute }}</li>-->
         <router-link title="Ezyo Music home" tag="li" class="home" to="/">
             <img id="logo" src="../assets/logo.svg" alt="ezyo music logo"/>
             <menu-btn txt="home"/>
@@ -34,6 +36,14 @@ export default {
     return {
       msg: 'Navigation menu here.'
     }
+  },
+  computed: {
+    activeRoute () {
+      return this.$store.state.activeRoute
+    },
+    scrollPosition () {
+      return this.$store.state.scrollPosition
+    }
   }
 }
 </script>
@@ -59,7 +69,6 @@ nav {
 nav ul {
   align-items: center;
   display: flex;
-  flex-direction: row;
   margin: 0 4px;
   width: 100%;
 }
@@ -70,9 +79,10 @@ nav ul {
 #nav nav ul li {
   flex: 1;
   flex-direction: row;
-  text-align: center;
 }
-
+.router-link-exact-active .button button {
+  background-color:blue;
+}
 @media only screen and (min-width:768px) {
   #nav {
     /*background-image: url("../assets/vw-checkerboard.svg");*/
@@ -80,7 +90,7 @@ nav ul {
     background-size: 2%;
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    
     position: relative;
     width: 200px;
   }
@@ -90,13 +100,14 @@ nav ul {
     display: flex;
     height: 100%;
     justify-content: center;
-    padding: 40px 20px;
     position: fixed;
     top: 0;
     left: 0;
+    width: 200px;
   }
   nav ul {
     flex-direction: column;
+    justify-content: center;
   }
   #logo {
     animation: bounce 0.8s;
@@ -106,7 +117,7 @@ nav ul {
     width: 100px;
   }
   .home {
-    line-height: 0; 
+  line-height: 0;
   font-size: 0;
   color: transparent;
   }
@@ -115,8 +126,17 @@ nav ul {
   }
   #nav nav ul li {
     align-items: center;
+    flex: 0;
     flex-direction: column;
     margin: 10px 0;
+  }
+}
+@media only screen and (min-width:1600px) {
+  #nav {
+        width: 300px;
+  }
+  nav {
+    width: 300px;
   }
 }
 </style>

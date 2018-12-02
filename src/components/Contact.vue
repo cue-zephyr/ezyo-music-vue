@@ -1,8 +1,8 @@
 <template>
     <div id="contact">
-        <a target="_blank" href="mailto:ezyo@ezyomusic.com">email</a>
-        <a target="_blank" href="https://instagram.com/ezyomusic">instagram</a>
-        <a target="_blank" href="https://open.spotify.com/artist/16QCSNhQUlkqsR3xgtlSAs">spotify</a>
+        <a title="Email Ezyo: ezyo@ezyomusic.com" target="_blank" href="mailto:ezyo@ezyomusic.com">email</a>
+        <a title="@ezyomusic on Instagram" target="_blank" href="https://instagram.com/ezyomusic">instagram</a>
+        <a title="Ezyo on Spotify" target="_blank" href="https://open.spotify.com/artist/16QCSNhQUlkqsR3xgtlSAs">spotify</a>
     </div>
 </template>
 

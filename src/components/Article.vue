@@ -15,10 +15,7 @@ export default {
 <style scoped>
 article {
     background-image: linear-gradient( #b65252, #3c253f);
-    height: 100vh;
     padding: 0 2%;
-}
-article > * {
 }
 article h1, .content h2 {
   font-family: Bai Jamjuree;
@@ -33,8 +30,15 @@ article h2 {
 article p {
   font-size: 1em;
 }
+img, iframe {
+  margin: 14px 0;
+}
 @media only screen and (min-width:768px) {
   article {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
     padding: 0 10%;
   }
   article h1 {

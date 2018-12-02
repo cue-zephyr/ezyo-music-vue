@@ -11,7 +11,7 @@ import Content from '@/components/Content'
 export default {
   name: 'Home',
   components: {
-      'content-view': Content
+    'content-view': Content
   }
 }
 </script>

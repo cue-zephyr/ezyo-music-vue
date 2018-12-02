@@ -27,8 +27,8 @@ import Content from '@/components/Content'
 export default {
   name: 'Music',
   components: {
-      "content-article": Article,
-      "content-view": Content
+    'content-article': Article,
+    'content-view': Content
   }
 }
 </script>
@@ -41,8 +41,9 @@ export default {
     justify-content: center;
 }
 .video {
+    overflow: hidden;
+    padding-top: 56.25%;
     position: relative;
-    height: 30%;
     width: 100%;
 }
 iframe {
@@ -53,14 +54,15 @@ iframe {
     height: 100%;
     width: 100%;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:480px) {
     .video {
-        height: 40%;
+        padding-top: 40%;
+        
     }
 }
 @media only screen and (min-width:1024px) {
     .video {
-        width: 50%;
+        padding-top: 56.25%;
     }
 }
 </style>

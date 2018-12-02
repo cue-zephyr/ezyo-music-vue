@@ -32,11 +32,11 @@
 import Article from '@/components/Article'
 import Content from '@/components/Content'
 export default {
-    name: 'Services',
-    components: {
-        'content-view': Content,
-        'content-article': Article
-    }
+  name: 'Services',
+  components: {
+    'content-view': Content,
+    'content-article': Article
+  }
 }
 </script>
 
