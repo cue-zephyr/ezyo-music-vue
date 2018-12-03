@@ -15,7 +15,7 @@ export default {
 <style scoped>
 article {
     background-image: linear-gradient( #b65252, #3c253f);
-    padding: 0 2%;
+    padding: 20px 2%;
 }
 article h1, .content h2 {
   font-family: Bai Jamjuree;

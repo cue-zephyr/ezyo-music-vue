@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <nav-menu/>
-    <router-view class="router-view"/>
+    <transition name="slide">
+      <router-view class="router-view"/>
+    </transition>
     <svg-filters/>
   </div>
 </template>

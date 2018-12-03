@@ -62,6 +62,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 9001;
 }
 nav {
   background-image: linear-gradient(#686868, #2f2f2f) ;
@@ -83,8 +84,8 @@ nav ul {
 .router-link-exact-active.home {
   filter: url('/#white-glow');
 }
-.router-link-exact-active:not(.home) {
-  background-color: #efe0af;
+.router-link-exact-active {
+  background-color: #72694a;
   filter: url('/#white-glow');
 }
 .router-link-exact-active .button {
@@ -136,6 +137,12 @@ nav ul {
     flex: 0;
     flex-direction: column;
     margin: 10px 0;
+  }
+  .router-link-exact.active:not(.home) {
+    background-color: #efe0af;
+  }
+  .router-link-exact-active.home {
+    background-color: transparent;
   }
 }
 @media only screen and (min-width:1600px) {

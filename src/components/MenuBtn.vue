@@ -19,6 +19,7 @@ export default {
   font-family: Montserrat, sans-serif;
   height: 60px;
   text-align: center;
+  width: 100%;
 }
 .button .active {
   color:green;

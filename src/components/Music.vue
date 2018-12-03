@@ -43,6 +43,7 @@ export default {
 .video {
     overflow: hidden;
     padding-top: 56.25%;
+    padding-bottom: 25px;
     position: relative;
     width: 100%;
 }

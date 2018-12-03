@@ -16,6 +16,7 @@ export default {
   /*background-image: linear-gradient( #757fac, #494c6d);*/
   color: #efefef;
   font-family: Inconsolata;
+  margin-bottom: 50px;
   width: 100%;
 }
 @media only screen and (min-width:768px) {
