@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav-menu/>
-    <transition name="slide">
+    <transition name="fade">
       <router-view class="router-view"/>
     </transition>
     <svg-filters/>
@@ -68,6 +68,13 @@ export default {
 }
 .router-view {
   flex: 1;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 @media only screen and (min-width:768px) {
   #app {
