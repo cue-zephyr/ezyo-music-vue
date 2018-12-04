@@ -4,18 +4,15 @@
     <transition name="fade">
       <router-view class="router-view"/>
     </transition>
-    <svg-filters/>
   </div>
 </template>
 
 <script>
-import SvgFilters from './components/SvgFilters.vue'
 import NavMenu from './components/NavMenu'
 export default {
   name: 'App',
   components: {
     'nav-menu': NavMenu,
-    'svg-filters': SvgFilters
   },
   mounted () {
     this.setActiveRoute()

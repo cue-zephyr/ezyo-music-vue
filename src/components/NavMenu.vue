@@ -81,14 +81,11 @@ nav ul {
   flex: 1;
   flex-direction: row;
 }
-.router-link-exact-active.home {
-  filter: url('/#white-glow');
-}
 .router-link-exact-active:not(.home) {
   background-color: #72694a;
 }
 .router-link-exact-active .button {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 @media only screen and (min-width:768px) {
   #nav {
@@ -137,7 +134,10 @@ nav ul {
     flex-direction: column;
     margin: 10px 0;
   }
-  .router-link-exact.active:not(.home) {
+  .router-link-exact-active {
+    filter: url('../assets/filters.svg#white-glow');
+  }
+  .router-link-exact-active:not(.home) {
     background-color: #efe0af;
   }
   .router-link-exact-active.home {
