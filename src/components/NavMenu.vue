@@ -84,12 +84,11 @@ nav ul {
 .router-link-exact-active.home {
   filter: url('/#white-glow');
 }
-.router-link-exact-active {
+.router-link-exact-active:not(.home) {
   background-color: #72694a;
-  filter: url('/#white-glow');
 }
 .router-link-exact-active .button {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 @media only screen and (min-width:768px) {
   #nav {
