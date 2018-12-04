@@ -4,7 +4,6 @@
     <transition name="fade">
       <router-view class="router-view"/>
     </transition>
-    <svg-filters/>
   </div>
 </template>
 

@@ -65,7 +65,7 @@ export default {
   z-index: 9001;
 }
 nav {
-  background-image: linear-gradient(#686868, #2f2f2f) ;
+    background-color: #cfcfcf;
 }
 nav ul {
   align-items: center;
@@ -81,28 +81,24 @@ nav ul {
   flex: 1;
   flex-direction: row;
 }
-.router-link-exact-active.home {
-  filter: url('/#white-glow');
-}
-.router-link-exact-active:not(.home) {
-  background-color: #72694a;
+.router-link-exact-active {
+  background-color: #acacac;
 }
 .router-link-exact-active .button {
-  opacity: 0.4;
+  opacity: 0.8;
 }
+
 @media only screen and (min-width:768px) {
   #nav {
-    /*background-image: url("../assets/vw-checkerboard.svg");*/
-    /*background-image: url("../assets/carbon-fiber.svg");*/
-    background-size: 2%;
     display: flex;
     height: 100vh;
-    
     position: relative;
     width: 200px;
   }
   nav {
     align-content: center;
+    background-image: url("../assets/vw-checkerboard.svg");
+    background-size: 40%;
     box-shadow: 2px 0px 2px rgba(0,0,0,0.5);
     display: flex;
     height: 100%;
@@ -135,13 +131,14 @@ nav ul {
     align-items: center;
     flex: 0;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 2px 0;
   }
-  .router-link-exact.active:not(.home) {
-    background-color: #efe0af;
+  .router-link-exact-active {
+    background-color: #0031b8;
   }
   .router-link-exact-active.home {
     background-color: transparent;
+    filter: url('../assets/filters.svg#white-glow');
   }
 }
 @media only screen and (min-width:1600px) {

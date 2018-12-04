@@ -15,22 +15,23 @@ export default {
 <style scoped>
 #contact {
     align-items: center;
-    background-image: linear-gradient( #b65252, #3c253f);
+    background-image: linear-gradient(#ac759a,#6e5f86);
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
 }
 a {
-    color: #adadad;
+    color: #0000ff;
     font-family: Inconsolata;
     font-size: 4em;
     padding: 8px;
 }
 a:hover, a:visited:hover {
-    color: #eeeeee;
+    color: #4366ff;
 }
 a:visited {
-    color: #aa8888;
+    color: #600090;
 }
 a:active {
     color: #e4cd9e;

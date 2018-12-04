@@ -66,6 +66,7 @@ export default {
     border-right: 2px solid #e4e4e4;
     box-shadow: none;
     color: #efefef;
+    filter: url('../assets/filters.svg#white-glow');
     margin: 2px -2px -2px 2px;
     transition: all 0.1s;
   }

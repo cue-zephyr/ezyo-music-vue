@@ -18,17 +18,14 @@ export default {
 
 <style scoped>
 #home {
-   background-image: linear-gradient( #b65252, #3c253f);
-
-}
-#home {
     align-items: center;
     /*background-color: #6a8a8d;*/
-    /*background-image: url('../assets/perspective_grid.svg');*/
+    background-image: linear-gradient(#ac759a,#6e5f86);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
 }
 #em {
