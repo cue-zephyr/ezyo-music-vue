@@ -74,6 +74,7 @@ nav ul {
   width: 100%;
 }
 #logo {
+  cursor: pointer;
   display: none;
   width: 50px;
 }
