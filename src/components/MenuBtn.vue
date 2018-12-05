@@ -13,9 +13,12 @@ export default {
 
 <style scoped>
 .button button {
-  border: none;
-  background-color: transparent;
-  color: #efefef;
+  background-color: #cacaca;
+  border-top: 2px solid #dfdfdf;
+  border-right: 2px solid #8d8d8d;
+  border-bottom: 2px solid #8d8d8d;
+  border-left: 2px solid #dfdfdf;
+  color: #000;
   font-family: Montserrat, sans-serif;
   height: 60px;
   text-align: center;
@@ -29,11 +32,8 @@ export default {
   .button button {
     /*background-image: linear-gradient(#ddd, #888);*/
     /*background-color: #4f6e92;*/
-    background-color: #7a3b3b;
-    border: 2px solid #7f7f7f;
     border-radius: 2px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    color: #efefef;
     font-family: Montserrat, sans-serif;
     font-size: 1.3em;
     width: 160px;
@@ -48,8 +48,7 @@ export default {
   .button button:hover {
     /*background-image: linear-gradient(#eee, #999);*/
     /*background-color: #5084c0;*/
-    background-color: #aa5a5a;
-    border: 2px solid #acacac;
+    background-color: #000080;
     cursor: pointer;
     text-decoration: underline;
     transition: all 0.2s;
@@ -61,12 +60,13 @@ export default {
     border: 2px solid #e6e1a9;
     box-shadow: none;
     color: #efefef;
-    filter: url('../assets/filters.svg#white-glow');
+    
     margin: 2px -2px -2px 2px;
     transition: all 0.1s;
   }
   .button button:focus {
-    border: 2px solid #faa25a;
+    border: 1px dotted #000;
+    margin: 1px;
     outline: 0;
   }
   .button button::-moz-focus-inner {

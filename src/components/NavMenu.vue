@@ -65,7 +65,11 @@ export default {
   z-index: 9001;
 }
 nav {
-  background-image: linear-gradient(#686868, #2f2f2f) ;
+  background-color: #cacaca;
+  border-top: 2px solid #dfdfdf;
+  border-right: 2px solid #8d8d8d;
+  border-bottom: 2px solid #8d8d8d;
+  border-left: 2px solid #dfdfdf;
 }
 nav ul {
   align-items: center;
@@ -83,7 +87,7 @@ nav ul {
   flex-direction: row;
 }
 .router-link-exact-active:not(.home) {
-  background-color: #72694a;
+  background-color: #ffffff;
 }
 .router-link-exact-active .button {
   opacity: 0.6;
@@ -135,14 +139,25 @@ nav ul {
     flex-direction: column;
     margin: 10px 0;
   }
+  nav ul li:first-child {
+    background-color: #000;
+    padding:12px 2px 2px 2px;
+  }
+  nav ul li:hover:first-child {
+    background-color: #000080;
+  }
   .router-link-exact-active {
-    filter: url('../assets/filters.svg#white-glow');
+    
   }
   .router-link-exact-active:not(.home) {
-    background-color: #efe0af;
+    background-color: #ffffff;
   }
   .router-link-exact-active.home {
-    background-color: transparent;
+    background-color: #444;
+    border-top: 2px solid #8d8d8d;
+    border-right: 2px solid #dfdfdf;
+    border-bottom: 2px solid #dfdfdf;
+    border-left: 2px solid #8d8d8d;
   }
 }
 @media only screen and (min-width:1600px) {
