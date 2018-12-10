@@ -4,22 +4,21 @@
       <ul>
         <!--<li>scroll position: {{ scrollPosition }}</li>
         <li>active route {{ activeRoute }}</li>-->
-        <router-link title="Ezyo Music home" tag="li" class="home" to="/">
+        <li><router-link title="Ezyo Music home" class="home" to="/">
             <img id="logo" src="../assets/logo.svg" alt="ezyo music logo"/>
-            <menu-btn txt="home"/>
-        </router-link>
-        <router-link title="learn about me" tag="li" class="button" to="/about">
-          <menu-btn txt="about"/>
-        </router-link>
-        <router-link title="listen to my music" tag="li" class="button" to="/music">
-          <menu-btn txt="music"/>
-        </router-link>
-        <router-link title="what Ezyo can do for you" tag="li" class="button" to="/services">
-            <menu-btn txt="services"/>
-          </router-link>
-          <router-link title="contact me" tag="li" class="button" to="/contact">
-            <menu-btn txt="contact" />
-          </router-link>
+        </router-link></li>
+        <li><router-link title="learn about me" class="button" to="/about">
+        about
+        </router-link></li>
+        <li><router-link title="listen to my music" class="button" to="/music">
+        music
+        </router-link></li>
+        <li><router-link title="what Ezyo can do for you" class="button" to="/services">
+        services
+          </router-link></li>
+          <li><router-link title="contact me" class="button" to="/contact">
+          contact
+          </router-link></li>
         </ul>
       </nav>
     </div>
@@ -63,9 +62,6 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 9001;
-}
-nav {
-  background-image: linear-gradient(#686868, #2f2f2f) ;
 }
 nav ul {
   align-items: center;

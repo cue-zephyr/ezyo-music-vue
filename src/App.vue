@@ -53,7 +53,6 @@ export default {
 
 <style>
 #app {
-  background-image: linear-gradient( #5f2b2b, #1b111d);
   flex-direction: row;
   height: 100vh;
 }

@@ -14,7 +14,6 @@ export default {
 .content {
   /*background-image: linear-gradient( #ac759a, #6e5f86);*/
   /*background-image: linear-gradient( #757fac, #494c6d);*/
-  color: #efefef;
   font-family: Inconsolata;
   margin-bottom: 50px;
   width: 100%;

@@ -15,13 +15,11 @@ export default {
 <style scoped>
 #contact {
     align-items: center;
-    background-image: linear-gradient( #b65252, #3c253f);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 a {
-    color: #adadad;
     font-family: Inconsolata;
     font-size: 4em;
     padding: 8px;

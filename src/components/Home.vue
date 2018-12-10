@@ -18,10 +18,6 @@ export default {
 
 <style scoped>
 #home {
-   background-image: linear-gradient( #b65252, #3c253f);
-
-}
-#home {
     align-items: center;
     /*background-color: #6a8a8d;*/
     /*background-image: url('../assets/perspective_grid.svg');*/
