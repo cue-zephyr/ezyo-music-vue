@@ -63,6 +63,9 @@ export default {
   bottom: 0;
   z-index: 9001;
 }
+nav {
+  background-color: #cf6459;
+}
 nav ul {
   align-items: center;
   display: flex;
@@ -132,7 +135,6 @@ nav ul {
     margin: 10px 0;
   }
   .router-link-exact-active {
-    filter: url('../assets/filters.svg#white-glow');
   }
   .router-link-exact-active:not(.home) {
     background-color: #efe0af;

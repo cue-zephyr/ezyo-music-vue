@@ -20,12 +20,16 @@ export default {
     justify-content: center;
 }
 a {
+    color: #0000ee;
     font-family: Inconsolata;
     font-size: 4em;
     padding: 8px;
 }
+a:active {
+    color: #ee0000;
+}
 a:hover, a:visited:hover {
-    color: #eeeeee;
+    color: #551A8B ;
 }
 a:visited {
     color: #aa8888;

@@ -53,6 +53,8 @@ export default {
 
 <style>
 #app {
+  background-color: rgb(201, 170, 155);
+  color: #fff;
   flex-direction: row;
   height: 100vh;
 }
