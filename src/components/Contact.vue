@@ -15,7 +15,6 @@ export default {
 <style scoped>
 #contact {
     align-items: center;
-    background-image: linear-gradient( #b65252, #3c253f);
     display: flex;
     flex-direction: column;
     justify-content: center;

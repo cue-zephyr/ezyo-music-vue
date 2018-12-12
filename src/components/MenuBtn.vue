@@ -29,27 +29,28 @@ export default {
   .button button {
     /*background-image: linear-gradient(#ddd, #888);*/
     /*background-color: #4f6e92;*/
-    background-color: #7a3b3b;
-    border: 2px solid #7f7f7f;
-    border-radius: 2px;
+    background-image: url('../assets/redbutton.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 21px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: #efefef;
     font-family: Montserrat, sans-serif;
     font-size: 1.3em;
+    height: 42px;
     width: 160px;
   }
   .button button:disabled {
     /*background-color: #6a778f;*/
     /*background-color: #516781;*/
-    background-color: #4e3131;
     color: #777777;
+    opacity: 0.7;
 
   }
   .button button:hover {
     /*background-image: linear-gradient(#eee, #999);*/
     /*background-color: #5084c0;*/
-    background-color: #aa5a5a;
-    border: 2px solid #acacac;
+    border: 1px solid #acacac;
     cursor: pointer;
     text-decoration: underline;
     transition: all 0.2s;
@@ -57,11 +58,9 @@ export default {
   .button button:active {
     /*background-image: linear-gradient(#aaa, #ededed);*/
     /*background-color: #9ac3f1;*/
-    background-color: #db9e81;
-    border: 2px solid #e6e1a9;
+    border: 2px solid #c0c0c0;
     box-shadow: none;
     color: #efefef;
-    filter: url('../assets/filters.svg#white-glow');
     margin: 2px -2px -2px 2px;
     transition: all 0.1s;
   }
@@ -75,7 +74,8 @@ export default {
 }
 @media only screen and (min-width:1600px) {
   .button button {
-    height: 10vh;
+    border-radius: 37px;
+    height: 64px;
     width: 250px;
   }
 }

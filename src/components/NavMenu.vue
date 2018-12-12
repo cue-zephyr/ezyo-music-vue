@@ -65,7 +65,7 @@ export default {
   z-index: 9001;
 }
 nav {
-  background-image: linear-gradient(#686868, #2f2f2f) ;
+  background-color: #000;
 }
 nav ul {
   align-items: center;
@@ -81,12 +81,6 @@ nav ul {
 #nav nav ul li {
   flex: 1;
   flex-direction: row;
-}
-.router-link-exact-active:not(.home) {
-  background-color: #72694a;
-}
-.router-link-exact-active .button {
-  opacity: 0.6;
 }
 @media only screen and (min-width:768px) {
   #nav {
@@ -130,30 +124,30 @@ nav ul {
     display: none;
   }
   #nav nav ul li {
+    border-radius: 21px;
     align-items: center;
     flex: 0;
     flex-direction: column;
     margin: 10px 0;
   }
-  .router-link-exact-active {
-    filter: url('../assets/filters.svg#white-glow');
-  }
   .router-link-exact-active:not(.home) {
-    background-color: #efe0af;
+    border: 3px solid #ededed;
   }
   .router-link-exact-active.home {
     background-color: transparent;
   }
 }
 @media only screen and (min-width:1600px) {
-  #nav {
-        width: 300px;
-  }
-  nav {
+  #nav, nav {
     width: 300px;
   }
   #logo {
     width:150px;
+  }
+  .router-link-exact-active:not(.home) {
+    background-color: #fff;
+    border: 3px solid #ededed;
+    border-radius: 37px;
   }
 }
 </style>

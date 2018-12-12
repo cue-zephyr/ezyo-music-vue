@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 #home {
-   background-image: linear-gradient( #b65252, #3c253f);
+   
 
 }
 #home {

@@ -52,10 +52,11 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #2e2727;
+}
 #app {
-  background-image: linear-gradient( #5f2b2b, #1b111d);
   flex-direction: row;
-  height: 100vh;
 }
 ::selection {
   background: #ffae00; /* WebKit/Blink Browsers */

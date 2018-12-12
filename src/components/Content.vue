@@ -21,7 +21,7 @@ export default {
 }
 @media only screen and (min-width:768px) {
   .content {
-    height: 100vh;
+    
   }
 }
 </style>
