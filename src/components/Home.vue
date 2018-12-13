@@ -3,15 +3,18 @@
         <img src="../assets/construction.gif" alt="under construction" />
         <img id="em" src="../assets/homelogo.svg" alt="ezyo music" />
         <img src="../assets/construction.gif" alt="under construction" />
+        <call-to-action/>
     </div>
 </template>
 
 <script>
 import Content from '@/components/Content'
+import Cta from '@/components/Cta'
 export default {
   name: 'Home',
   components: {
-    'content-view': Content
+    'content-view': Content,
+    'call-to-action': Cta
   }
 }
 </script>
