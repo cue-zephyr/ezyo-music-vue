@@ -8,16 +8,16 @@
             <img id="logo" src="../assets/logo.svg" alt="ezyo music logo"/>
             <menu-btn txt="home"/>
         </router-link>
-        <router-link title="learn about me" tag="li" class="button" to="/about">
+        <router-link title="learn about Ezyo" tag="li" class="button" to="/about">
           <menu-btn txt="about"/>
         </router-link>
-        <router-link title="listen to my music" tag="li" class="button" to="/music">
+        <router-link title="listen to Ezyo's music" tag="li" class="button" to="/music">
           <menu-btn txt="music"/>
         </router-link>
         <router-link title="what Ezyo can do for you" tag="li" class="button" to="/services">
             <menu-btn txt="services"/>
           </router-link>
-          <router-link title="contact me" tag="li" class="button" to="/contact">
+          <router-link title="get in touch with Ezyo" tag="li" class="button" to="/contact">
             <menu-btn txt="contact" />
           </router-link>
         </ul>
