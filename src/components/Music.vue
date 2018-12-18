@@ -4,7 +4,7 @@
             <content-article>
                 <h1>"Hannah"</h1>
                 <h2>INIGO</h2>
-                <p>I worked on this production</p>
+                <p>I worked on this production. I'm the Asian behind the keys.</p>
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/lg9jwSm6vzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
@@ -12,7 +12,7 @@
             <content-article>
                 <h1>"Only A Memory"</h1>
                 <h2>Rachel White &amp; Ezyo</h2>
-                <p>I worked on this production ad well</p>
+                <p>I worked on this production ad well. I'm the one playing the instruments.</p>
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/pV9wm8mHNak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>

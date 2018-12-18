@@ -3,6 +3,8 @@
         <a title="Email Ezyo: ezyo@ezyomusic.com" target="_blank" href="mailto:ezyo@ezyomusic.com">email</a>
         <a title="@ezyomusic on Instagram" target="_blank" href="https://instagram.com/ezyomusic">instagram</a>
         <a title="Ezyo on Spotify" target="_blank" href="https://open.spotify.com/artist/16QCSNhQUlkqsR3xgtlSAs">spotify</a>
+        <a title="Ezyo on Twitter" target="_blank" href="https://twitter.com/ezyomusic">twitter</a>
+        <a title="Ezyo on YouTube" target="_blank" href="https://www.youtube.com/channel/UCxalVqtwypQTNvgmQ5z-pJA">youtube</a>
     </div>
 </template>
 

@@ -17,8 +17,8 @@
         <router-link title="what Ezyo can do for you" tag="li" class="button" to="/services">
             <menu-btn txt="services"/>
           </router-link>
-          <router-link title="contact me" tag="li" class="button" to="/contact">
-            <menu-btn txt="contact" />
+          <router-link title="contact and connect with Ezyo" tag="li" class="button" to="/contact">
+            <menu-btn txt="connect" />
           </router-link>
         </ul>
       </nav>
