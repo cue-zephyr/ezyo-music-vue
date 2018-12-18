@@ -11,10 +11,19 @@
             </content-article>
             <content-article>
                 <h1>"Only A Memory"</h1>
-                <h2>Rachel WhiteO</h2>
+                <h2>Rachel White &amp; Ezyo</h2>
                 <p>I worked on this production ad well</p>
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/pV9wm8mHNak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </content-article>
+            <content-article>
+                <h1>"Timeless</h1>
+                <p class="subtitle">Mr. Beemer &amp; Ezyo Remix</p>
+                <h2>Plamen Dereu</h2>
+                <p>I worked on this remix.</p>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dCK2t9qZ4i0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </content-article>
         </content-view>
@@ -54,6 +63,10 @@ iframe {
     left: 0;
     height: 100%;
     width: 100%;
+}
+.subtitle {
+    font-size: 1.9em;
+    text-transform: uppercase;
 }
 @media only screen and (min-width:480px) {
     .video {

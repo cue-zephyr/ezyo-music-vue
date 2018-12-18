@@ -51,10 +51,18 @@ export default {
 <style scoped>
 @keyframes bounce {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: scaleX(1.05) scaleY(0.95) translate3d(0, 0, 0);
   }
   to {
     transform: translate3d(0, -10px, 0);
+  }
+}
+@keyframes border {
+  from {
+    border-color: rgba(237, 237, 237, 0.1);
+  }
+  to {
+    border-color: rgba(237, 237, 237, 1);
   }
 }
 #nav {
@@ -85,8 +93,6 @@ nav ul {
 @media only screen and (min-width:768px) {
   #nav {
     /*background-image: url("../assets/vw-checkerboard.svg");*/
-    /*background-image: url("../assets/carbon-fiber.svg");*/
-    background-size: 2%;
     display: flex;
     height: 100vh;
     
@@ -95,6 +101,8 @@ nav ul {
   }
   nav {
     align-content: center;
+    background-image: url("../assets/carbon-fiber.svg");
+    background-size: 2%;
     box-shadow: 2px 0px 2px rgba(0,0,0,0.5);
     display: flex;
     height: 100%;
@@ -131,10 +139,17 @@ nav ul {
     margin: 10px 0;
   }
   .router-link-exact-active:not(.home) {
-    border: 3px solid #ededed;
+    animation: border 0.6s steps(2);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    border: 3px solid rgba(237, 237, 237, 1);
   }
   .router-link-exact-active.home {
+    animation: bounce 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     background-color: transparent;
+    filter: url('../assets/filters.svg#white-glow');
   }
 }
 @media only screen and (min-width:1600px) {
@@ -145,9 +160,8 @@ nav ul {
     width:150px;
   }
   .router-link-exact-active:not(.home) {
-    background-color: #fff;
-    border: 3px solid #ededed;
     border-radius: 37px;
+    border-width: 5px;
   }
 }
 </style>

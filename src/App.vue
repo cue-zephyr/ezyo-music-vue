@@ -54,6 +54,7 @@ export default {
 <style>
 body {
   background-color: #2e2727;
+  color: #efefef;
 }
 #app {
   flex-direction: row;
