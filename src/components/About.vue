@@ -9,7 +9,29 @@
                 </p>
             </div>
             <div class="article-image">
-                <img src="../assets/about/grid-music2.png" alt="metaphysical"/>
+                <img src="../assets/about/vision.svg" alt="metaphysical"/>
+            </div>
+        </content-article>
+        <content-article>
+            <div class="article-text">
+                <p>
+                    “The whole is bigger than the sum of its parts,” Aristotle said. This is also relevant for music. 
+
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="../assets/about/sum-parts.svg" alt="metaphysical"/>
+            </div>
+        </content-article>
+        <content-article>
+            <div class="article-text">
+                <p>
+                    “The whole is bigger than the sum of its parts,” Aristotle said. This is also relevant for music. 
+
+                </p>
+            </div>
+            <div class="article-image">
+                <img src="../assets/about/sum-parts.svg" alt="metaphysical"/>
             </div>
         </content-article>
     </content-view>
@@ -36,6 +58,7 @@ export default {
     justify-content: baseline;
 }
 img {
+    background-color: #aaa;
     height: 100%;
     width: 100%;
 }
